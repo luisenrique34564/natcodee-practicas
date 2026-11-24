@@ -1,0 +1,38 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Consultas</title>
+    <link href="~/Styles/Provias.css?v=@DateTime.Now.Ticks" rel="stylesheet" />
+</head>
+<body>
+
+    <div>
+        <div class="Titulo">
+            Demo 09: Filtrar Desconectado en el Cliente: Texto con Grilla
+            <div class="Subtitulo">Consulta de Productos</div>
+            <div class="Mensaje">
+                Nombre del Producto:
+                <input id="txtNombre" type="text" style="width:300px" autocomplete="off" />
+            </div>
+            <div class="Mensaje">
+                Registros Encontrados: <span>id="spnTotal"</span>
+            </div>
+            <div id="divProducto"></div>
+        </div>
+
+    </div>
+    <script src="~/Scripts/Consulta.js"></script>
+    <script src="~/Scripts/General.js"></script>
+    <script src="~/Scripts/General.js?v=@DateTime.Now.Ticks"></script>
+    <!-- 2° Se carga la lógica específica de esta página -->
+    <script src="~/Scripts/Consulta.js?v=@DateTime.Now.Ticks"></script>
+
+</body>
+</html>
